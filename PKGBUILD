@@ -1,7 +1,7 @@
-# Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+# Maintainer: Capricornus007 <sihaogang@gmail.com>
 
 pkgbase=linux-cjktty
-pkgver=6.14.6.arch1
+pkgver=6.19.6.arch1
 pkgrel=1
 pkgdesc='Linux (with cjktty-patches)'
 url='https://github.com/archlinux/linux'
@@ -33,7 +33,7 @@ source=(
   $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.sig}
   config  # the main kernel config file
 )
-source+=("$_cjktty_repo/raw/master/v6.x/cjktty-6.9.patch"
+source+=("$_cjktty_repo/raw/master/v6.x/cjktty-6.19.patch"
          "$_cjktty_repo/raw/master/cjktty-add-cjk32x32-font-data.patch")
 validpgpkeys=(
   ABAF11C65A2970B130ABE3C479BE3E4300411886  # Linus Torvalds
@@ -41,22 +41,22 @@ validpgpkeys=(
   83BC8889351B5DEBBB68416EB8AC08600F108CDF  # Jan Alexander Steffens (heftig)
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('21817f1998e2230f81f7e4f605fa6fdcb040e14fa27d99c27ddb16ce749797a9'
+sha256sums=('4d9f3ff73214f68c0194ef02db9ca4b7ba713253ac1045441d4e9f352bc22e14'
             'SKIP'
-            'e9bac19174ffcab45c0db7d054bb42b3a6a1f8e7f81ec7610d7b5a9cf5946108'
+            '9465435c9e2a655f5bd73b5863c44e262d6e99e9929467f1d647bab2dd5afd26'
             'SKIP'
-            '15df67e5d931b0b2b26dafa40f6ecfb64d8e3bf0fb15840bf3fe225c7285ad77')
-b2sums=('dedcadc0b7506f620da3ac849446539e83d694f0955d5417e063b6680d53ef8993eeef40562ae8dae9249a21bea9746093f8873a360dd74f6b139fbafdd7b9ac'
+            '15df67e5d931b0b2b26dafa40f6ecfb64d8e3bf0fb15840bf3fe225c7285ad77'
+            '8e25a53bef9af907cd2a180cee1312efd8441cbb9714c05cc99f416def879536'
+            'c648ff21f0a5714743bbae85d6c6e1ed2bf961b6bca976d4c6b4c8d3f6b2739f')
+b2sums=('612fd1e944194c20bb2e6f9d2b309d5957db5b738bcb7b782c9c25de4c02b341fa5caa9af76d92e88628135b8334f550cc2277d63738098fde950ca05f46e89a'
         'SKIP'
-        'ef3cdc4558949c0694f362cc68880c5c067ef3f9633aff4f6c9ed2e5017a75b00aac7e2ad45b33371b341efb6423430d5446ff4024ff0a5542663107d17b219a'
+        '8432d3a2fc622cfe08960b1c7e7889c3bbb3f617a0b6c04111f064c792799ac512b0704f67559090535f2b573340c89479997497ad6214aa088283eda4e32cc7'
         'SKIP'
-        'ddd747ef366fc040e08ed1bcf0d04222b67d4396eb45a3f0dfaa9f4eba1e113061deba1978646147e7345ac2e76af099f6ed19c505b883aeecdae9615358da6a')
+        'ddd747ef366fc040e08ed1bcf0d04222b67d4396eb45a3f0dfaa9f4eba1e113061deba1978646147e7345ac2e76af099f6ed19c505b883aeecdae9615358da6a'
+        '46b2630c6bec2dc4d84638d7be6a2391fef158c9a268f64c099927dd5e6b4a4c7269516e347c72ea8d02e6875cfbe8ac6d162214de45ff53ab2bfc1cfbbd9248'
+        '101996793aeede5e456b23b35c2fd4af5c38fd363473dcdda0bce6e21d110a9f88a67e325b1ebf8efef4a7511f135c4f64ff1fc54b8ef925a5df8d6292ba7678')
 
-sha256sums+=('6714bf3968392e29f19e44514d490ad7ec718c3897003210fd1e499017dd429d'
-             'c648ff21f0a5714743bbae85d6c6e1ed2bf961b6bca976d4c6b4c8d3f6b2739f')
 
-b2sums+=('8e08152d7413fbd00f71e5f09c680ad7b6b4f8bdfbd56b07659ea7ce54a7d738b73c0fa240f3c90133d4cb2e566be94ffaad5ba1ffddbd4dff99ea6587c44b42'
-         '101996793aeede5e456b23b35c2fd4af5c38fd363473dcdda0bce6e21d110a9f88a67e325b1ebf8efef4a7511f135c4f64ff1fc54b8ef925a5df8d6292ba7678')
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
@@ -239,3 +239,4 @@ for _p in "${pkgname[@]}"; do
 done
 
 # vim:set ts=8 sts=2 sw=2 et:
+# Contributor: Jan Alexander Steffens (heftig) <heftig@archlinux.org>

@@ -33,7 +33,7 @@ source=(
   $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.sig}
   config  # the main kernel config file
 )
-source+=("https://raw.githubusercontent.com/2822867502/cjktty-patches/13720a714cbfa82c21425e5dac6829a92ee4fdf3/v6.x/cjktty-6.19.patch"
+source+=("https://github.com/bigshans/cjktty-patches/raw/refs/heads/master/v6.x/cjktty-6.19.patch"
          "$_cjktty_repo/raw/master/cjktty-add-cjk32x32-font-data.patch")
 validpgpkeys=(
   ABAF11C65A2970B130ABE3C479BE3E4300411886  # Linus Torvalds

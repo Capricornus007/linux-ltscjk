@@ -2,7 +2,7 @@
 
 pkgbase=linux-ltscjk
 pkgname=("$pkgbase" "$pkgbase-headers")
-pkgver=6.12.83
+pkgver=6.12.84
 pkgrel=1
 pkgdesc='Linux LTS (with cjktty-patches)'
 url='https://www.kernel.org'
@@ -26,7 +26,11 @@ source=(
 )
 
 # 執行 updpkgsums 會自動填寫這裡
-sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP')
+sha256sums=('d56e463a7b1f5355794ae83a102453ad930a51f9cb46b295fcf24a717bff52dd'
+            'SKIP'
+            'a9c5f770cd9cc9db108f7d6428d9f2aa88303d85ca54b1a8b0f2f7789f872358'
+            '4f1d58eb9776c9620ec6a1587dbb149955fe2dec0ca059b633a406596522f1ee'
+            'c648ff21f0a5714743bbae85d6c6e1ed2bf961b6bca976d4c6b4c8d3f6b2739f')
 
 validpgpkeys=(
   'ABAF11C65A2970B130ABE3C479BE3E4300411886' # Linus Torvalds

@@ -56,6 +56,9 @@ prepare() {
 build() {
   cd "$_srcname"
   make all
+  mkdir -pv tools/bpf/bpftool
+  touch tools/bpf/bpftool/vmlinux.h
+  touch localversion.placeholder
 }
 
 _package() {

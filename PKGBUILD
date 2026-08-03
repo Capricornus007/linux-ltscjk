@@ -29,7 +29,7 @@ source=(
 sha256sums=('0d21cd11933f49f7151b7c9dbb8cc3fddc8c8abe506434b850feecf41fc28a76'
             'SKIP'
             '8314e755f7b8977f78265a8e69056d089d24fc338b79b86eba6e10dc55d71ad9'
-            'ceae5748319e9d5fad81abc3532f4f3160f8a11dbb31f9139a37a9d6d752675f'
+            '502c41aac2cbe42052dcd9bc96b4cd00ab1f87d77744af19e5ac084c4ff641bc'
             'c648ff21f0a5714743bbae85d6c6e1ed2bf961b6bca976d4c6b4c8d3f6b2739f')
 
 validpgpkeys=(

@@ -2,7 +2,7 @@
 
 pkgbase=linux-ltscjk
 pkgname=("$pkgbase" "$pkgbase-headers")
-pkgver=6.12.101
+pkgver=6.12.102
 pkgrel=1
 pkgdesc='Linux LTS (with cjktty-patches)'
 url='https://www.kernel.org'
@@ -21,12 +21,12 @@ source=(
   "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-${pkgver}.tar.xz"
   "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-${pkgver}.tar.sign"
   "config"  # 這是從你的 config_base 複製過來的檔案
-  "0001-cjktty.patch::$_cjktty_repo/raw/master/v6.x/cjktty-6.12.90.patch"
+  "0001-cjktty.patch::$_cjktty_repo/raw/master/v6.x/cjktty-6.12.101.patch"
   "0002-cjktty-font.patch::$_cjktty_repo/raw/master/cjktty-add-cjk32x32-font-data.patch"
 )
 
 # 執行 updpkgsums 會自動填寫這裡
-sha256sums=('0d21cd11933f49f7151b7c9dbb8cc3fddc8c8abe506434b850feecf41fc28a76'
+sha256sums=('694bb5f49371323ab9c2b7040bd358ed81bffbe80b372d76507045828f655803'
             'SKIP'
             '8314e755f7b8977f78265a8e69056d089d24fc338b79b86eba6e10dc55d71ad9'
             '502c41aac2cbe42052dcd9bc96b4cd00ab1f87d77744af19e5ac084c4ff641bc'
